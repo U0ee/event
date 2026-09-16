@@ -1070,7 +1070,16 @@
      - 응답이 너무 오래 걸리면(20초) 기다리기를 멈춰서 "전송 중..."에서 멈추지 않게 합니다.
      - 연결이 끊기면 자동으로 최대 2번 더 시도합니다.
      - 요청마다 고유번호(requestId)를 붙여, 같은 요청이 두 번 도착해도 한 번만 기록되게 합니다. */
-  const REQUEST_TIMEOUT_MS = 20000;
+  const REQUEST_TIMEOUT_MS = 30000; // 30초까지 기다림
+
+  // "미리 깨우기": 구글 서버는 한동안 안 쓰면 잠들어서 첫 요청이 느립니다.
+  // 입력을 시작할 때 가벼운 신호(ping)를 먼저 보내 서버를 깨워 둡니다. (2분에 한 번만)
+  let lastWarmUp = 0;
+  function warmUpServer() {
+    if (!GOOGLE_SCRIPT_URL || Date.now() - lastWarmUp < 120000) return;
+    lastWarmUp = Date.now();
+    fetch(`${GOOGLE_SCRIPT_URL}?action=ping`).catch(() => {}); // 결과는 기다리지 않음
+  }
 
   // 겹치지 않는 고유번호 만들기 (예: "m1abc2de-x7k3p9")
   function makeRequestId() {
@@ -1577,6 +1586,13 @@
   /* ---------- 초기 로드 ---------- */
   window.addEventListener('DOMContentLoaded', () => {
     renderReviewCards();
+
+    // 서버 미리 깨우기: 페이지를 열 때 + 서평 응모/사서 확인 입력칸을 누를 때
+    warmUpServer();
+    ['vote-org', 'vote-name', 'librarian-code'].forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.addEventListener('focus', warmUpServer);
+    });
 
     loadSession();
     if (session) {

@@ -1,0 +1,1523 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>한국노동연구원 도서관 | 9월 독서의 달 & 재개관 안내</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800;900&family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+  :root {
+    --bg-page: #F5F7FA;
+    --bg-card: #FFFFFF;
+    --bg-subtle-green: #EDF7F2;
+    --bg-subtle-navy: #EEF4FA;
+
+    --navy-main: #0B2238;
+    --navy-sub: #1A3D60;
+    --green-main: #0E4030;
+    --green-accent: #17654E;
+    --green-bright: #2B8A68;
+    --green-mint: #38D9A9;
+
+    --stamp-color: #E03131;
+
+    --text-dark: #1E293B;
+    --text-muted: #5A6D80;
+    --border-color: #E2E8F0;
+    --border-green: #B7DFCD;
+    --border-navy: #BDD4E7;
+
+    --shadow-sm: 0 4px 12px rgba(11, 34, 56, 0.05);
+    --shadow-md: 0 8px 24px rgba(14, 64, 48, 0.08);
+    --shadow-lg: 0 16px 36px rgba(11, 34, 56, 0.12);
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+    word-break: keep-all;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    background-color: var(--bg-page);
+    color: var(--text-dark);
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
+  .app-container {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    min-height: 100vh;
+    box-shadow: var(--shadow-lg);
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* ===== 히어로 ===== */
+  .hero-section {
+    position: relative;
+    overflow: hidden;
+    background-color: #0B2238;
+    padding: 60px 24px 50px;
+    border-bottom: 1px solid var(--border-color);
+    color: #FFFFFF;
+  }
+
+  .hero-bg-layer {
+    position: absolute;
+    inset: -20px;
+    background-image: url('hero-bg.jpeg');
+    background-size: cover;
+    background-position: center 42%;
+    filter: blur(3px) brightness(0.65);
+    transform: scale(1.08);
+    z-index: 0;
+  }
+
+  .hero-overlay-layer {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(circle at 50% 35%, rgba(11, 34, 56, 0.2) 0%, rgba(11, 34, 56, 0.65) 100%),
+      linear-gradient(180deg, rgba(14, 64, 48, 0.15) 0%, rgba(11, 34, 56, 0.55) 100%);
+    z-index: 1;
+  }
+
+  .hero-inner { position: relative; z-index: 2; max-width: 900px; margin: 0 auto; text-align: center; }
+
+  .org-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1.5px solid rgba(255, 255, 255, 0.45);
+    color: #FFFFFF;
+    font-size: 0.84rem;
+    font-weight: 700;
+    padding: 6px 16px;
+    border-radius: 24px;
+    margin-bottom: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  }
+  .org-badge i { color: var(--green-mint); }
+
+  .main-title {
+    font-size: 1.95rem;
+    font-weight: 800;
+    color: #FFFFFF;
+    line-height: 1.35;
+    margin-bottom: 14px;
+    text-shadow: 0 3px 14px rgba(0, 0, 0, 0.7);
+    letter-spacing: -0.5px;
+  }
+  .main-title span { color: var(--green-mint); }
+
+  .hero-subtitle {
+    font-size: 0.98rem;
+    color: rgba(255, 255, 255, 0.92);
+    margin-bottom: 24px;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.55);
+  }
+
+  .welcome-banner {
+    background: rgba(255, 255, 255, 0.14);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 16px;
+    padding: 16px 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    text-align: left;
+    max-width: 680px;
+    margin: 0 auto;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.28);
+  }
+  .welcome-icon { font-size: 2rem; color: var(--green-mint); flex-shrink: 0; }
+  .welcome-text h4 { font-size: 0.96rem; font-weight: 700; color: #FFFFFF; margin-bottom: 3px; }
+  .welcome-text p { font-size: 0.82rem; color: rgba(255, 255, 255, 0.88); line-height: 1.45; }
+
+  /* ===== 본문 ===== */
+  .content-area { padding: 36px 24px; flex: 1; }
+  .section-header { margin-bottom: 24px; }
+  .section-title {
+    font-size: 1.35rem;
+    font-weight: 800;
+    color: var(--navy-main);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .section-title i { color: var(--green-main); }
+
+  .cards-grid { display: grid; grid-template-columns: 1fr; gap: 24px; }
+
+  .event-card {
+    background: #FFFFFF;
+    border-radius: 16px;
+    padding: 24px 20px;
+    box-shadow: var(--shadow-md);
+    position: relative;
+    border: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    min-width: 0;
+  }
+  .event-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+  .event-card.theme-green { border-top: 4px solid var(--green-main); }
+  .event-card.theme-navy { border-top: 4px solid var(--navy-main); }
+
+  .card-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; flex-wrap: wrap; gap: 6px; }
+
+  .badge-tag {
+    font-size: 0.78rem;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 6px;
+    background: var(--bg-subtle-green);
+    color: var(--green-main);
+    border: 1px solid var(--border-green);
+  }
+  .badge-tag.navy-tag { background: var(--bg-subtle-navy); color: var(--navy-main); border: 1px solid var(--border-navy); }
+
+  .event-title { font-size: 1.22rem; font-weight: 700; color: var(--navy-main); margin-bottom: 12px; line-height: 1.35; }
+
+  .event-desc {
+    background: #F8FAFC;
+    border: 1px solid #EDF2F7;
+    padding: 12px 14px;
+    border-radius: 10px;
+    font-size: 0.88rem;
+    color: var(--text-dark);
+    margin-bottom: 16px;
+    line-height: 1.6;
+  }
+  .event-desc ul { padding-left: 18px; }
+  .event-desc li { margin-bottom: 4px; }
+
+  .meta-list { list-style: none; font-size: 0.86rem; margin-bottom: 16px; }
+  .meta-list li { display: flex; margin-bottom: 8px; align-items: baseline; }
+  .meta-key { width: 62px; flex-shrink: 0; color: var(--text-muted); font-weight: 600; display: flex; align-items: center; gap: 6px; }
+  .meta-key i { color: var(--navy-sub); width: 14px; }
+  .meta-val { color: var(--navy-main); font-weight: 600; }
+  .meta-val.highlight-green { color: var(--green-main); font-weight: 700; }
+
+  /* ===== 9개 구역 스탬프 판 & GOOD 도장 ===== */
+  .stamp-board { background: #F8FAFC; border: 1.5px solid var(--border-color); border-radius: 14px; padding: 14px 12px; margin-bottom: 10px; }
+  .stamp-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; padding-bottom: 8px; border-bottom: 1px dashed var(--border-color); }
+  .stamp-header h5 { font-size: 0.86rem; font-weight: 700; color: var(--navy-main); display: flex; align-items: center; gap: 6px; }
+  .stamp-count-badge { background-color: var(--green-main); color: #FFFFFF; font-size: 0.76rem; font-weight: 700; padding: 3px 8px; border-radius: 12px; }
+
+  .stamp-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+
+  .stamp-item {
+    background: #FFFFFF;
+    border: 1.5px solid #E2E8F0;
+    border-radius: 10px;
+    padding: 10px 4px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 76px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.2s ease;
+  }
+  .stamp-item:hover:not(.completed) { border-color: var(--green-bright); background-color: #F0FDF4; transform: translateY(-2px); }
+  .stamp-item .zone-name { font-size: 0.76rem; font-weight: 700; color: var(--navy-main); line-height: 1.25; margin-bottom: 4px; z-index: 1; }
+  .stamp-item .click-hint { font-size: 0.65rem; color: #64748B; font-weight: 500; background: #EDF2F7; padding: 2px 6px; border-radius: 4px; z-index: 1; }
+
+  .stamp-item.completed { background: #FAFDFB; border-color: #A7F3D0; cursor: default; }
+  .stamp-item.completed .zone-name { color: #064E3B; opacity: 0.55; }
+  .stamp-item.completed .click-hint { display: none; }
+
+  .good-stamp {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 54px;
+    height: 54px;
+    transform: translate(-50%, -50%) rotate(-14deg) scale(0.95);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    color: var(--stamp-color);
+    border: 2px solid var(--stamp-color);
+    border-radius: 50%;
+    text-transform: uppercase;
+    background: rgba(254, 242, 242, 0.85);
+    box-shadow: 0 0 0 1px rgba(224, 49, 49, 0.2);
+    z-index: 2;
+    pointer-events: none;
+  }
+  .good-stamp .stamp-thumb { font-size: 1.05rem; line-height: 1; }
+  .good-stamp .stamp-text { font-size: 0.56rem; letter-spacing: 0.5px; line-height: 1; }
+  .stamp-item.completed .good-stamp { display: flex; }
+  .stamp-item.just-stamped .good-stamp { animation: stampImpact 0.45s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards; }
+
+  @keyframes stampImpact {
+    0% { opacity: 0; transform: translate(-50%, -50%) rotate(0deg) scale(2.6); }
+    70% { opacity: 1; transform: translate(-50%, -50%) rotate(-16deg) scale(0.88); }
+    100% { opacity: 1; transform: translate(-50%, -50%) rotate(-14deg) scale(0.95); }
+  }
+
+  .completion-banner {
+    display: none;
+    background: linear-gradient(135deg, #FFF9EB 0%, #FEF3D6 100%);
+    border: 1.5px solid #F6D884;
+    border-radius: 10px;
+    padding: 12px;
+    margin-top: 12px;
+    text-align: center;
+    animation: fadeIn 0.4s ease;
+  }
+  .completion-banner.show { display: block; }
+  .completion-banner h6 { color: #9A6700; font-size: 0.92rem; font-weight: 800; margin-bottom: 3px; display: flex; align-items: center; justify-content: center; gap: 6px; }
+  .completion-banner p { font-size: 0.8rem; color: #6B4701; font-weight: 600; line-height: 1.4; }
+  .completion-banner .completed-time { display: inline-block; margin-top: 6px; font-size: 0.72rem; color: #8C5E00; background: rgba(255, 255, 255, 0.75); padding: 2px 8px; border-radius: 4px; border: 1px solid rgba(246, 216, 132, 0.8); }
+
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }
+
+  /* ===== 서평 응모 폼 (1번 행사) ===== */
+  .vote-locked { background: var(--bg-subtle-navy); border: 1.5px dashed var(--border-navy); border-radius: 12px; padding: 16px; margin-bottom: 16px; }
+  .vote-locked p { font-size: 0.85rem; color: var(--navy-main); font-weight: 600; margin-bottom: 10px; }
+
+  .vote-form { background: var(--bg-subtle-navy); border: 1.5px solid var(--border-navy); border-radius: 12px; padding: 16px; margin-bottom: 12px; }
+  .vote-form-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+  .vote-form-head p { font-size: 0.85rem; color: var(--navy-main); font-weight: 700; display: flex; align-items: center; gap: 6px; }
+  .btn-relock { background: none; border: none; color: var(--text-muted); font-size: 0.78rem; cursor: pointer; text-decoration: underline; padding: 0; }
+
+  .vote-field { margin-bottom: 10px; }
+  .vote-field label { display: block; font-size: 0.8rem; font-weight: 600; color: var(--navy-main); margin-bottom: 4px; }
+
+  /* ===== 서평 카드 선택 (블라인드) ===== */
+  .review-card-list { display: flex; flex-direction: column; gap: 8px; margin-bottom: 10px; max-height: 420px; overflow-y: auto; padding-right: 2px; }
+  .review-card { background: #FFFFFF; border: 1.5px solid var(--border-navy); border-radius: 10px; padding: 10px 12px; cursor: pointer; transition: all 0.15s ease; }
+  .review-card:hover { border-color: var(--navy-sub); background: #F5F9FD; }
+  .review-card.selected { border-color: var(--green-bright); background: var(--bg-subtle-green); box-shadow: 0 0 0 2px rgba(43, 138, 104, 0.18); }
+  .review-card-num { font-size: 0.72rem; font-weight: 700; color: var(--navy-sub); margin-bottom: 10px; }
+  .review-card.selected .review-card-num { color: var(--green-main); }
+
+  .review-quote-block { margin-bottom: 16px; }
+  .review-quote-block:last-child { margin-bottom: 0; }
+
+  .review-ai-badge { display: inline-flex; align-items: center; gap: 6px; font-size: 0.72rem; font-weight: 700; margin-bottom: 5px; }
+  .review-ai-badge .ai-dot {
+    width: 16px; height: 16px; border-radius: 50%; flex-shrink: 0;
+    display: inline-flex; align-items: center; justify-content: center;
+    font-size: 0.6rem; font-weight: 800; color: #FFFFFF;
+  }
+  .review-ai-badge.claude { color: #B65C3D; }
+  .review-ai-badge.claude .ai-dot { background: #D97757; }
+  .review-ai-badge.chatgpt { color: #0E8C6E; }
+  .review-ai-badge.chatgpt .ai-dot { background: #10A37F; }
+  .review-ai-badge.gemini { color: #4A5FC1; }
+  .review-ai-badge.gemini .ai-dot { background: linear-gradient(135deg, #4285F4, #9B72CB); }
+
+  .review-quote { font-size: 0.78rem; color: var(--text-dark); line-height: 1.55; padding-left: 10px; border-left: 2px solid var(--border-color); }
+  .vote-selected-hint { font-size: 0.8rem; font-weight: 600; color: var(--text-muted); margin-bottom: 10px; min-height: 18px; }
+  .vote-selected-hint.picked { color: var(--green-main); }
+
+  .vote-msg { font-size: 0.83rem; font-weight: 600; margin-top: 8px; min-height: 18px; }
+  .vote-msg.ok { color: var(--green-main); }
+  .vote-msg.err { color: var(--stamp-color); }
+
+  /* ===== 참가자 정보 입력 ===== */
+  .stamp-entry { background: var(--bg-subtle-green); border: 1.5px dashed var(--border-green); border-radius: 12px; padding: 16px; margin-bottom: 16px; }
+  .stamp-entry p { font-size: 0.85rem; color: var(--green-main); font-weight: 600; margin-bottom: 10px; }
+  .entry-row { display: flex; gap: 8px; margin-bottom: 10px; flex-wrap: wrap; }
+  .entry-input {
+    flex: 1;
+    min-width: 120px;
+    height: 44px;
+    padding: 0 12px;
+    border-radius: 8px;
+    border: 1.5px solid var(--border-green);
+    font-size: 0.9rem;
+    color: var(--navy-main);
+    outline: none;
+  }
+  .entry-input:focus { border-color: var(--green-bright); box-shadow: 0 0 0 3px rgba(43, 138, 104, 0.15); }
+  .entry-error { color: var(--stamp-color); font-size: 0.8rem; margin-top: 4px; min-height: 16px; }
+
+  .participant-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--bg-subtle-navy);
+    color: var(--navy-main);
+    border: 1px solid var(--border-navy);
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 5px 12px;
+    border-radius: 20px;
+    margin-bottom: 12px;
+  }
+
+  /* ===== 버튼 ===== */
+  .btn-action { display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%; min-height: 48px; padding: 12px; border-radius: 10px; font-size: 0.94rem; font-weight: 700; text-decoration: none; cursor: pointer; transition: all 0.2s ease; border: none; margin-top: auto; }
+  .btn-naver { background-color: #03C75A; color: #FFFFFF; box-shadow: 0 4px 12px rgba(3, 199, 90, 0.25); }
+  .btn-naver:hover { background-color: #02a34a; }
+  .btn-naver:disabled { background-color: #B7DFCD; cursor: not-allowed; box-shadow: none; }
+  .btn-library-link { background-color: var(--bg-subtle-navy); color: var(--navy-main); border: 1.5px solid var(--border-navy); }
+  .btn-library-link:hover { background-color: #DEE9F5; }
+
+  /* ===== 경품 아코디언 ===== */
+  .prize-accordion { margin-bottom: 14px; border: 1.5px solid var(--border-green); border-radius: 10px; background-color: var(--bg-subtle-green); overflow: hidden; }
+  .prize-summary { padding: 10px 14px; font-size: 0.84rem; font-weight: 700; color: var(--green-main); cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none; }
+  .prize-summary::-webkit-details-marker { display: none; }
+  .prize-summary .arrow-icon { font-size: 0.8rem; color: var(--green-main); transition: transform 0.2s ease; }
+  .prize-accordion[open] .prize-summary .arrow-icon { transform: rotate(180deg); }
+  .prize-content { padding: 12px 14px 14px; background-color: #FFFFFF; border-top: 1px solid var(--border-green); font-size: 0.85rem; color: var(--text-dark); line-height: 1.6; }
+
+  /* ===== 사서 확인 패널 ===== */
+  .librarian-accordion { margin-top: 4px; border: 1.5px solid var(--border-navy); border-radius: 10px; background-color: var(--bg-subtle-navy); overflow: hidden; }
+  .librarian-summary { padding: 10px 14px; font-size: 0.84rem; font-weight: 700; color: var(--navy-main); cursor: pointer; display: flex; justify-content: space-between; align-items: center; list-style: none; }
+  .librarian-summary::-webkit-details-marker { display: none; }
+  .librarian-summary .arrow-icon { font-size: 0.8rem; color: var(--navy-main); transition: transform 0.2s ease; }
+  .librarian-accordion[open] .librarian-summary .arrow-icon { transform: rotate(180deg); }
+  .librarian-content { padding: 14px; background-color: #FFFFFF; border-top: 1px solid var(--border-navy); }
+  .librarian-content p.hint { font-size: 0.8rem; color: var(--text-muted); margin-bottom: 12px; line-height: 1.5; }
+  .librarian-row { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 10px; }
+  .librarian-row input {
+    width: 140px;
+    height: 44px;
+    text-align: center;
+    letter-spacing: 4px;
+    font-weight: 700;
+    padding: 0 10px;
+    border-radius: 8px;
+    border: 1.5px solid var(--border-navy);
+    font-size: 0.95rem;
+    outline: none;
+  }
+  .librarian-row input:focus { border-color: var(--navy-sub); box-shadow: 0 0 0 3px rgba(26, 61, 96, 0.12); }
+  .librarian-row button { flex: none; width: auto; padding: 0 18px; height: 44px; margin-top: 0; }
+  .librarian-msg { font-size: 0.83rem; font-weight: 600; margin-bottom: 10px; min-height: 18px; }
+  .librarian-msg.ok { color: var(--green-main); }
+  .librarian-msg.err { color: var(--stamp-color); }
+
+  /* ===== 리모델링 요약 ===== */
+  .remodel-section { margin-top: 36px; background: linear-gradient(145deg, var(--bg-subtle-green) 0%, #FFFFFF 100%); border: 1.5px dashed var(--border-green); border-radius: 16px; padding: 24px; }
+  .remodel-section h4 { font-size: 1.05rem; font-weight: 700; color: var(--green-main); margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
+  .remodel-section p { font-size: 0.88rem; color: var(--text-dark); line-height: 1.6; }
+
+  /* ===== 인증번호 입력 모달 ===== */
+  .input-modal { display: none; position: fixed; inset: 0; background: rgba(11, 34, 56, 0.7); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); z-index: 2000; justify-content: center; align-items: center; padding: 20px; }
+  .input-modal.active { display: flex; }
+  .input-box { width: 100%; max-width: 340px; background: #FFFFFF; border-radius: 18px; padding: 24px 20px; text-align: center; position: relative; box-shadow: 0 20px 40px rgba(0,0,0,0.3); animation: modalPop 0.25s ease; }
+  @keyframes modalPop { from { transform: scale(0.92); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+  .modal-zone-tag { display: inline-block; font-size: 0.8rem; font-weight: 700; color: var(--green-main); background: var(--bg-subtle-green); padding: 4px 12px; border-radius: 20px; margin-bottom: 8px; }
+  .input-box h4 { font-size: 1.18rem; font-weight: 800; color: var(--navy-main); margin-bottom: 6px; }
+  .input-box p { font-size: 0.84rem; color: var(--text-muted); margin-bottom: 18px; }
+  .code-input-field { width: 100%; height: 52px; font-size: 1.6rem; font-weight: 800; text-align: center; letter-spacing: 8px; border: 2px solid var(--border-color); border-radius: 10px; outline: none; color: var(--navy-main); margin-bottom: 18px; transition: border-color 0.2s; }
+  .code-input-field:focus { border-color: var(--green-bright); box-shadow: 0 0 0 3px rgba(43, 138, 104, 0.15); }
+  .modal-btn-group { display: flex; gap: 8px; }
+  .btn-modal { flex: 1; height: 44px; border-radius: 8px; font-size: 0.92rem; font-weight: 700; cursor: pointer; border: none; transition: opacity 0.2s; }
+  .btn-modal-cancel { background: #E2E8F0; color: var(--text-dark); }
+  .btn-modal-submit { background: var(--green-main); color: #FFFFFF; }
+  .btn-modal:hover { opacity: 0.9; }
+
+  /* ===== 완료 미션 오버레이 ===== */
+  .mission-modal { display: none; position: fixed; inset: 0; background: rgba(11, 34, 56, 0.75); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); z-index: 2100; justify-content: center; align-items: center; padding: 20px; }
+  .mission-modal.active { display: flex; }
+  .mission-box { width: 100%; max-width: 360px; background: #FFFFFF; border-radius: 20px; padding: 32px 24px; text-align: center; box-shadow: 0 24px 48px rgba(0,0,0,0.35); animation: modalPop 0.3s ease; }
+  .mission-box .mission-icon { font-size: 2.6rem; margin-bottom: 10px; }
+  .mission-box h3 { font-size: 1.25rem; font-weight: 800; color: var(--navy-main); margin-bottom: 8px; }
+  .mission-box p { font-size: 0.9rem; color: var(--green-main); font-weight: 700; line-height: 1.5; margin-bottom: 20px; }
+  .mission-box button { background: var(--navy-main); color: #fff; }
+  .mission-box button:hover { background: var(--navy-sub); }
+
+  /* ===== 관리자 모드 ===== */
+  .admin-entry-btn { margin-top: 14px; background: none; border: 1px solid var(--border-color); color: var(--text-muted); font-size: 0.76rem; padding: 6px 14px; border-radius: 20px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: all 0.2s ease; }
+  .admin-entry-btn:hover { color: var(--navy-main); border-color: var(--border-navy); }
+
+  .admin-modal { display: none; position: fixed; inset: 0; background: rgba(11, 34, 56, 0.75); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); z-index: 2200; justify-content: center; align-items: center; padding: 20px; }
+  .admin-modal.active { display: flex; }
+  .admin-box { position: relative; width: 100%; max-width: 640px; max-height: 88vh; overflow-y: auto; background: #FFFFFF; border-radius: 20px; padding: 30px 24px 24px; box-shadow: 0 24px 48px rgba(0,0,0,0.35); animation: modalPop 0.25s ease; text-align: left; }
+  .admin-box h3 { font-size: 1.15rem; font-weight: 800; color: var(--navy-main); margin-bottom: 4px; display: flex; align-items: center; gap: 8px; }
+  .admin-sub { font-size: 0.82rem; color: var(--text-muted); margin-bottom: 18px; }
+  .admin-close-x { position: absolute; top: 16px; right: 18px; background: none; border: none; font-size: 1.2rem; color: var(--text-muted); cursor: pointer; line-height: 1; padding: 4px; }
+  .admin-close-x:hover { color: var(--navy-main); }
+
+  .admin-gate-box { text-align: center; padding: 6px 0 2px; }
+  .admin-gate-box input { width: 160px; text-align: center; letter-spacing: 4px; font-weight: 700; margin: 0 auto 12px; display: block; height: 46px; border-radius: 10px; border: 1.5px solid var(--border-navy); font-size: 1rem; outline: none; }
+  .admin-gate-box input:focus { border-color: var(--navy-sub); box-shadow: 0 0 0 3px rgba(26, 61, 96, 0.12); }
+  .admin-gate-err { font-size: 0.82rem; color: var(--stamp-color); font-weight: 600; min-height: 18px; margin-bottom: 8px; }
+  .admin-gate-box .btn-action { max-width: 200px; margin: 0 auto; }
+
+  .admin-summary-row { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 16px; }
+  .admin-stat { flex: 1; min-width: 130px; background: var(--bg-subtle-navy); border: 1.5px solid var(--border-navy); border-radius: 12px; padding: 12px 14px; }
+  .admin-stat b { display: block; font-size: 1.35rem; color: var(--navy-main); font-variant-numeric: tabular-nums; }
+  .admin-stat span { font-size: 0.76rem; color: var(--text-muted); font-weight: 600; }
+
+  .admin-msg { font-size: 0.83rem; font-weight: 600; margin-top: 8px; min-height: 18px; }
+  .admin-msg.ok { color: var(--green-main); }
+  .admin-msg.err { color: var(--stamp-color); }
+
+  .admin-section-title { font-size: 0.9rem; font-weight: 800; color: var(--navy-main); margin: 18px 0 8px; display: flex; align-items: center; gap: 6px; }
+  .admin-table-wrap { overflow-x: auto; border: 1px solid var(--border-color); border-radius: 10px; }
+  .admin-table { width: 100%; border-collapse: collapse; font-size: 0.8rem; white-space: nowrap; }
+  .admin-table th, .admin-table td { padding: 9px 12px; text-align: left; border-bottom: 1px solid var(--border-color); }
+  .admin-table th { background: var(--bg-subtle-navy); color: var(--navy-main); font-weight: 700; }
+  .admin-table tbody tr:last-child td { border-bottom: none; }
+  .admin-empty { padding: 16px; text-align: center; color: var(--text-muted); font-size: 0.84rem; }
+
+  .admin-draw-controls { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 14px; }
+  .admin-draw-controls label { font-size: 0.82rem; color: var(--text-muted); font-weight: 600; display: flex; align-items: center; gap: 6px; }
+  .admin-draw-controls input[type="number"] { width: 60px; height: 38px; border-radius: 8px; border: 1.5px solid var(--border-navy); text-align: center; font-weight: 700; font-size: 0.9rem; outline: none; }
+  .admin-draw-controls input[type="number"]:focus { border-color: var(--navy-sub); box-shadow: 0 0 0 3px rgba(26, 61, 96, 0.12); }
+  .btn-draw-all { flex: none; width: auto; min-height: 38px; height: 38px; padding: 0 16px; margin-top: 0; }
+
+  .draw-group { border: 1.5px solid var(--border-navy); background: var(--bg-subtle-navy); border-radius: 12px; padding: 12px 14px; margin-bottom: 10px; }
+  .draw-group-head { display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 8px; }
+  .draw-group-title { font-size: 0.88rem; font-weight: 700; color: var(--navy-main); display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+  .draw-group-count { font-size: 0.74rem; font-weight: 600; color: var(--text-muted); background: #FFFFFF; border: 1px solid var(--border-navy); border-radius: 20px; padding: 2px 9px; }
+  .btn-redraw { flex: none; background: #FFFFFF; border: 1.5px solid var(--border-navy); color: var(--navy-main); font-size: 0.76rem; font-weight: 700; padding: 6px 12px; border-radius: 20px; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; transition: all 0.2s ease; }
+  .btn-redraw:hover { background: var(--bg-subtle-navy); border-color: var(--navy-sub); }
+  .draw-winner-list { display: flex; flex-wrap: wrap; gap: 8px; }
+  .draw-winner-chip { background: #FFFFFF; border: 1.5px solid var(--green-bright); color: var(--green-main); font-size: 0.82rem; font-weight: 700; padding: 6px 12px; border-radius: 20px; }
+
+  .shake { animation: shake 0.35s ease-in-out; }
+  @keyframes shake { 0%, 100% { transform: translateX(0); } 20%, 60% { transform: translateX(-8px); } 40%, 80% { transform: translateX(8px); } }
+
+  .toast-msg { position: fixed; bottom: 25px; left: 50%; transform: translateX(-50%) translateY(100px); background: var(--navy-main); color: #FFFFFF; border: 1.5px solid var(--green-bright); padding: 12px 20px; border-radius: 30px; font-size: 0.88rem; font-weight: 600; box-shadow: 0 10px 25px rgba(0,0,0,0.25); display: flex; align-items: center; gap: 10px; z-index: 3000; opacity: 0; transition: all 0.3s ease; width: calc(100% - 40px); max-width: 440px; justify-content: center; }
+  .toast-msg.show { transform: translateX(-50%) translateY(0); opacity: 1; }
+
+  .footer { text-align: center; padding: 30px 20px; border-top: 1px solid var(--border-color); font-size: 0.82rem; color: var(--text-muted); background-color: #FAFCFE; margin-top: auto; }
+  .footer strong { color: var(--navy-main); font-size: 0.88rem; }
+  .footer p { margin-top: 6px; }
+
+  @media (min-width: 768px) {
+    .hero-section { padding: 75px 36px 65px; }
+    .main-title { font-size: 2.3rem; }
+    .hero-subtitle { font-size: 1.05rem; }
+    .content-area { padding: 42px 36px; }
+    .cards-grid { grid-template-columns: 1fr; gap: 20px; }
+  }
+  @media (min-width: 1024px) {
+    .hero-section { padding: 90px 48px 80px; }
+    .main-title { font-size: 2.6rem; }
+    .content-area { padding: 48px 48px; }
+    .cards-grid { gap: 24px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="app-container" id="main-app">
+
+  <!-- 히어로 -->
+  <header class="hero-section">
+    <div class="hero-bg-layer"></div>
+    <div class="hero-overlay-layer"></div>
+
+    <div class="hero-inner">
+      <div class="org-badge"><i class="fa-solid fa-bookmark"></i> RENEWAL! KLI LIBRARY </div>
+
+      <h1 class="main-title">9월 독서의 달<br><span>새로워진 도서관</span>으로 초대합니다</h1>
+
+      <p class="hero-subtitle">쾌적한 연구와 사색의 공간으로 재단장한 KLI 도서관을 만나보세요.</p>
+
+      <div class="welcome-banner">
+        <div class="welcome-icon"><i class="fa-solid fa-people-roof"></i></div>
+        <div class="welcome-text">
+          <h4>원내 구성원 누구나 환영합니다!</h4>
+          <p>연구직·행정직 임직원 여러분 모두 부담 없이 방문하셔서 준비된 행사를 함께 즐겨주세요.</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 본문 -->
+  <main class="content-area">
+    <div class="section-header">
+      <h3 class="section-title"><i class="fa-solid fa-calendar-check"></i> 9월 독서의 달 & 재개관 기념 이벤트 안내</h3>
+    </div>
+
+    <div class="cards-grid">
+
+      <!-- 1. 책 하나 빌리면 책 하나 주지 -->
+      <article class="event-card theme-navy">
+        <div>
+          <div class="card-top">
+            <span class="badge-tag navy-tag"><i class="fa-solid fa-book"></i> KLI 북클럽 X KLI 도서관 콜라보</span>
+            <span style="color: var(--navy-main); font-size: 0.82rem; font-weight: 700;">4일간 진행</span>
+          </div>
+          <h2 class="event-title">🐯📖 책 하나 빌리면 책 하나 주지~</h2>
+          <div class="event-desc">
+            <ul>
+              <li>KLI 북클럽과 도서관이 각각 선정한 도서 총 10권의 2줄 서평을 읽어보세요! 서평은 감성 100% 생성형 AI가 작성했습니다 😁</li>
+              <li>여러분의 마음을 움직인 서평은 무엇인가요? 서평 1개를 선택할 때까지 도서명은 비밀!</li>
+              <li>마음에 드는 서평(도서)에 투표하면 같은 서평을 선택한 그룹 내에서 추첨을 통해 해당 도서 1권 증정</li>
+            </ul>
+          </div>
+          <ul class="meta-list">
+            <li><span class="meta-key"><i class="fa-regular fa-calendar"></i> 기간</span><span class="meta-val">2026.9.28.(월) ~ 10.1.(목)</span></li>
+            <li><span class="meta-key"><i class="fa-solid fa-circle-check"></i> 조건</span><span class="meta-val">도서관 소장 도서 1권 필수 대출</span></li>
+            <li><span class="meta-key"><i class="fa-solid fa-gift"></i> 경품</span><span class="meta-val highlight-green">선택한 서평 도서 1권 (10명, 랜덤 추첨)</span></li>
+          </ul>
+
+          <!-- 응모 화면 잠금 (도서 대출 확인 후 직원이 열어줌) -->
+          <div class="vote-locked" id="vote-locked">
+            <p><i class="fa-solid fa-lock"></i> 도서 대출을 완료한 참여자에게만 응모 화면을 열어드립니다.</p>
+            <div class="entry-row">
+              <input type="password" id="vote-staff-code" class="entry-input" style="max-width:140px; text-align:center; letter-spacing:4px; font-weight:700;" placeholder="직원 확인 코드" maxlength="4" inputmode="numeric">
+              <button type="button" class="btn-action btn-naver" style="flex:none; width:auto; padding:0 18px; margin-top:0;" onclick="unlockVoteForm()">
+                <i class="fa-solid fa-unlock"></i> 응모 화면 열기
+              </button>
+            </div>
+            <div class="entry-error" id="vote-lock-error"></div>
+          </div>
+
+          <!-- 응모 폼 (직원 확인 후 참여자가 직접 작성) -->
+          <div class="vote-form" id="vote-form" style="display:none;">
+            <div class="vote-form-head">
+              <p><i class="fa-solid fa-square-poll-vertical"></i> 서평 응모</p>
+              <button type="button" class="btn-relock" onclick="relockVoteForm()">직원용 닫기</button>
+            </div>
+
+            <div class="vote-field">
+              <label>마음에 드는 서평을 하나 골라주세요 (선택하기 전까지 도서명은 비밀!)</label>
+              <div class="review-card-list" id="review-card-list"></div>
+              <div class="vote-selected-hint" id="vote-selected-hint">아직 선택한 서평이 없습니다.</div>
+            </div>
+
+            <div class="vote-field">
+              <label>소속과 이름을 입력해주세요.</label>
+              <div class="entry-row">
+                <input type="text" id="vote-org" class="entry-input" placeholder="소속 (예: 노동정책연구본부)">
+                <input type="text" id="vote-name" class="entry-input" placeholder="이름">
+              </div>
+            </div>
+
+            <button type="button" class="btn-action btn-naver" id="vote-submit-btn" onclick="submitVote()">
+              <i class="fa-solid fa-paper-plane"></i> 서평 응모하기
+            </button>
+            <div class="vote-msg" id="vote-msg"></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 2. 도장 깨기 -->
+      <article class="event-card theme-green">
+        <div>
+          <div class="card-top">
+            <span class="badge-tag"><i class="fa-solid fa-stamp"></i> 9개 구역 탐방</span>
+            <span style="color: var(--green-main); font-size: 0.82rem; font-weight: 700;">2일간 진행</span>
+          </div>
+          <h2 class="event-title">🔍📚 도장 깨기: NEW KLI 도서관</h2>
+          <div class="event-desc">
+            <ul>
+              <li>📱개인 핸드폰을 지참하고 새로워진 도서관의 9개 구역을 돌아다녀 보세요!</li>
+              <li>도서관 곳곳에 부착된 구역 탐방 <strong>인증번호 3자리</strong>를 입력하면 'GOOD' 도장이 찍힙니다</li>
+              <li>9개 구역 인증을 모두 완료한 후 사서에게 확인받으면 미션 성공! 경품도 받아가세요!</li>
+            </ul>
+          </div>
+
+          <ul class="meta-list">
+            <li><span class="meta-key"><i class="fa-regular fa-calendar"></i> 기간</span><span class="meta-val">2026.9.28.(월) ~ 9.29.(화)</span></li>
+            <li><span class="meta-key"><i class="fa-solid fa-gift"></i> 경품</span><span class="meta-val highlight-green">도서관 재개관 기념 커스텀 클리커 (60명, 선착순)</span></li>
+          </ul>
+
+          <!-- 참가자 정보 입력 -->
+          <div class="stamp-entry" id="stamp-entry">
+            <p><i class="fa-solid fa-user-pen"></i> 시작 전, 소속과 이름을 입력해주세요.</p>
+            <div class="entry-row">
+              <input type="text" id="entry-org" class="entry-input" placeholder="소속 (예: 노동정책연구본부)">
+              <input type="text" id="entry-name" class="entry-input" placeholder="이름">
+            </div>
+            <button type="button" class="btn-action btn-naver" onclick="startRally()">
+              <i class="fa-solid fa-flag-checkered"></i> 도장 깨기 시작하기
+            </button>
+            <div class="entry-error" id="entry-error"></div>
+          </div>
+
+          <!-- 9개 구역 스탬프 판 -->
+          <div id="stamp-board-wrap" style="display:none;">
+            <div class="participant-tag" id="participant-tag"><i class="fa-solid fa-id-badge"></i> <span></span></div>
+
+            <div class="stamp-board">
+              <div class="stamp-header">
+                <h5><i class="fa-solid fa-map-location-dot" style="color: var(--green-main);"></i> 9개 구역 도장판 (터치하여 인증)</h5>
+                <span class="stamp-count-badge" id="stamp-count">0 / 9 완료</span>
+              </div>
+
+              <div class="stamp-grid" id="stamp-grid"></div>
+
+              <div id="completion-banner" class="completion-banner">
+                <h6>🎉 미션 완료!</h6>
+                <p>사서에게 보여주고 커스텀 클리커 받아가세요~</p>
+                <div class="completed-time" id="completed-time-tag"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 사서 확인 패널 -->
+          <details class="librarian-accordion">
+            <summary class="librarian-summary">
+              <span><i class="fa-solid fa-user-tie" style="margin-right:4px;"></i> 🧑‍💼 사서 확인 · 경품 지급 처리</span>
+              <i class="fa-solid fa-chevron-down arrow-icon"></i>
+            </summary>
+            <div class="librarian-content">
+              <div class="librarian-row">
+                <input type="password" id="librarian-code" placeholder="확인코드" maxlength="4" inputmode="numeric">
+                <button type="button" class="btn-action btn-library-link" style="margin:0;" id="librarian-confirm-btn" onclick="confirmByLibrarian()">
+                  <i class="fa-solid fa-check"></i> 확인 완료
+                </button>
+              </div>
+              <div class="librarian-msg" id="librarian-msg"></div>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <!-- 3. 회의실, 너의 이름은 -->
+      <article class="event-card theme-navy">
+        <div>
+          <div class="card-top">
+            <span class="badge-tag navy-tag"><i class="fa-solid fa-square-poll-vertical"></i> 회의실 명칭 공모전</span>
+            <span style="color: var(--navy-main); font-size: 0.82rem; font-weight: 700;">2일간 진행</span>
+          </div>
+          <h2 class="event-title">❔🗳️ 회의실, 너의 이름은...</h2>
+          <div class="event-desc">
+            <ul>
+              <li>새로 생긴 회의실 이름을 여러분들께서 직접 지어주세요! </li>
+              <li>회의실 화면의 명칭 공모 웹 페이지에서 마음에 드는 명칭을 클릭하면 자동으로 투표 처리 됩니다</li>
+              <li>좋은 아이디어가 아직 공모되지 않았다면 직접 공모해주세요! 참신한 아이디어를 기다립니다💡 </li>
+            </ul>
+          </div>
+          <ul class="meta-list">
+            <li><span class="meta-key"><i class="fa-regular fa-calendar"></i> 기간</span><span class="meta-val">2026.9.28.(월) ~ 9.29.(화)</span></li>
+            <li><span class="meta-key"><i class="fa-solid fa-gift"></i> 경품</span><span class="meta-val highlight-green">문화상품권 5만원 (1명, 최다 득표 제안자)</span></li>
+          </ul>
+
+          <a href="https://klilib-name-vote.workspace-995514.chatgpt.site/" target="_blank" rel="noopener" class="btn-action btn-naver">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> 회의실 명칭 공모전 페이지로 가기
+          </a>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- 공간 리모델링 요약 -->
+    <section class="remodel-section">
+      <h4><i class="fa-solid fa-wand-magic-sparkles"></i> 활발한 정책 연구 소통과 쾌적한 휴식의 공간, KLI 도서관 리모델링 안내</h4>
+      <p>집중 연구를 위한 1인 집중석, 창의적 영감을 주는 창의사색석 등 프라이빗한 몰입 공간과 인터뷰 및 연구 협업 공간이 새롭게 조성되었습니다. 원내 구성원 여러분의 많은 이용과 방문을 바랍니다. <strong>연구 협업 공간(회의실) 이용 안내는 별도 공지를 참고</strong>하여 주시기 바랍니다.</p>
+    </section>
+  </main>
+
+  <!-- 인증번호 입력 모달 -->
+  <div id="input-modal" class="input-modal" role="dialog" aria-modal="true">
+    <div class="input-box" id="modal-box">
+      <span class="modal-zone-tag" id="modal-zone-tag">구역 인증</span>
+      <h4 id="modal-zone-title">일반 단행본</h4>
+      <p>현장에 적힌 <strong>숫자 3자리</strong>를 입력해 주세요.</p>
+      <input type="text" id="code-input" class="code-input-field" inputmode="numeric" pattern="[0-9]*" maxlength="3" placeholder="000" autocomplete="off">
+      <div class="modal-btn-group">
+        <button type="button" class="btn-modal btn-modal-cancel" onclick="closeInputModal()">취소</button>
+        <button type="button" class="btn-modal btn-modal-submit" onclick="submitCode()">인증하기</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 서평 정체 공개 오버레이 -->
+  <div id="review-reveal-modal" class="mission-modal" role="dialog" aria-modal="true">
+    <div class="mission-box">
+      <div class="mission-icon">📖</div>
+      <h3>두구두구... 정체 공개!</h3>
+      <p id="reveal-book-info">『도서명』<br>저자명</p>
+      <p style="font-size:0.78rem; color:var(--text-muted); font-weight:600; margin-top:-10px; margin-bottom:20px;">✅ 응모가 정상적으로 접수되었어요!</p>
+      <button type="button" class="btn-modal" style="width:100%;" onclick="closeRevealModal()">확인완료! 추첨 결과는 추후 공지!</button>
+    </div>
+  </div>
+
+  <!-- 미션 완료 오버레이 -->
+  <div id="mission-modal" class="mission-modal" role="dialog" aria-modal="true">
+    <div class="mission-box">
+      <div class="mission-icon">🎉</div>
+      <h3>미션 완료!</h3>
+      <p>사서에게 보여주고<br>클리커 받아가세요~ 🎁</p>
+      <button type="button" class="btn-modal" style="width:100%;" onclick="closeMissionModal()">확인했어요</button>
+    </div>
+  </div>
+
+  <!-- 토스트 -->
+  <div id="toast" class="toast-msg">
+    <i class="fa-solid fa-circle-check" style="color: #4EBA88; font-size: 1.15rem; flex-shrink: 0;"></i>
+    <span id="toast-text">인증되었습니다.</span>
+  </div>
+
+  <!-- 관리자 모드 -->
+  <div id="admin-modal" class="admin-modal" role="dialog" aria-modal="true">
+    <div class="admin-box" id="admin-box">
+      <button type="button" class="admin-close-x" onclick="closeAdminModal()" aria-label="닫기"><i class="fa-solid fa-xmark"></i></button>
+
+      <div id="admin-gate">
+        <h3><i class="fa-solid fa-user-shield"></i> 관리자 모드</h3>
+        <p class="admin-sub">응모 현황을 확인하고 엑셀로 내려받을 수 있어요.</p>
+        <div class="admin-gate-box">
+          <input type="password" id="admin-code-input" maxlength="4" inputmode="numeric" placeholder="관리자 코드">
+          <div class="admin-gate-err" id="admin-gate-err"></div>
+          <button type="button" class="btn-action btn-naver" onclick="unlockAdmin()">
+            <i class="fa-solid fa-unlock"></i> 확인
+          </button>
+        </div>
+      </div>
+
+      <div id="admin-panel" style="display:none;">
+        <h3><i class="fa-solid fa-chart-simple"></i> 응모 현황</h3>
+        <p class="admin-sub">구글 시트에 저장된 데이터를 불러옵니다.</p>
+
+        <div class="admin-summary-row" id="admin-summary"></div>
+
+        <button type="button" class="btn-action btn-naver" id="admin-export-btn" onclick="exportAdminExcel()">
+          <i class="fa-solid fa-file-excel"></i> 엑셀로 다운로드
+        </button>
+        <div class="admin-msg" id="admin-msg"></div>
+
+        <h4 class="admin-section-title"><i class="fa-solid fa-stamp"></i> 도장 깨기 경품 지급 명단</h4>
+        <div class="admin-table-wrap" id="admin-stamp-table"></div>
+
+        <h4 class="admin-section-title"><i class="fa-solid fa-book"></i> 서평 응모 명단</h4>
+        <div class="admin-table-wrap" id="admin-review-table"></div>
+
+        <h4 class="admin-section-title"><i class="fa-solid fa-shuffle"></i> 서평 그룹별 랜덤 추첨</h4>
+        <p class="admin-sub" style="margin-bottom:12px;">같은 서평을 선택한 사람들끼리 그룹을 지어 그룹별로 당첨자를 뽑아요.</p>
+        <div class="admin-draw-controls">
+          <label>그룹당 당첨 인원 <input type="number" id="draw-winner-count" min="1" value="1"></label>
+          <button type="button" class="btn-action btn-naver btn-draw-all" onclick="drawWinners()">
+            <i class="fa-solid fa-dice"></i> 전체 그룹 추첨하기
+          </button>
+        </div>
+        <div id="admin-draw-result"></div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <strong>한국노동연구원 도서관</strong>
+    <p>📝문의  044-287-6072 | lib@kli.re.kr</p>
+    <p style="margin-top: 8px; font-size: 0.74rem; opacity: 0.65;">© Korea Labor Institute Library. All rights reserved.</p>
+    <button type="button" class="admin-entry-btn" onclick="openAdminModal()">
+      <i class="fa-solid fa-lock"></i> 관리자 모드
+    </button>
+  </footer>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<script>
+  /* =========================================================
+     ⚙️ 설정 영역 — 실제 운영 시 아래 값만 수정하면 됩니다.
+     ========================================================= */
+  const ZONES = [
+    { id: 1, name: "일반 단행본", code: "318" },
+    { id: 2, name: "교양도서", code: "724" },
+    { id: 3, name: "KLI 발간물", code: "519" },
+    { id: 4, name: "신간&정기간행물", code: "862" },
+    { id: 5, name: "인터뷰존", code: "107" },
+    { id: 6, name: "공유마루", code: "493" },
+    { id: 7, name: "1인 집중석", code: "631" },
+    { id: 8, name: "창의사색석", code: "955" },
+    { id: 9, name: "소통마루", code: "240" }
+  ];
+
+  const LIBRARIAN_CODE = "0141"; // 사서 확인 코드
+
+  // 구글 시트 연동 (apps-script/Code.gs를 구글 시트에 배포한 뒤 아래 값을 채워주세요 — 안내 참고)
+  const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxk-Ivu3ncT-9HFHsSq9H7ng8lqBEgbOeYCk5xiIDS325008gCQWWr5pyLaTnSV4w7zdw/exec";
+  // ※ 관리자 코드는 보안을 위해 이 파일에 적지 않습니다. Code.gs의 ADMIN_CODE 한 곳에서만 관리합니다.
+
+  const VOTE_STAFF_CODE = "0141";   // 서평 응모 화면을 열기 위한 직원 확인 코드
+
+  // 1번 행사용 도서 10권 + 도서별 AI 서평 3개. id는 바뀌지 않아야 구글 시트에 쌓인 기존 응모 기록과 어긋나지 않습니다.
+  const BOOKS = [
+    { id: 1, title: "혼모노", author: "성해나", reviews: [
+      { ai: "claude", text: "오래 붙들어온 믿음이 조용히 등을 돌리는 밤,\n흔들리는 발끝으로 나는 무엇이 나인지 묻는다." },
+      { ai: "chatgpt", text: "믿고 있던 것이 흔들리는 순간, 마음은 오히려 더 선명해진다.\n쉽게 판단했던 것들 앞에서 오래 머물게 되는 묘한 여운." },
+      { ai: "gemini", text: "진짜라 믿었던 것들이 가짜로 밝혀져도 마음은 쉽게 돌아서지 않는다.\n어쩌면 우리는 처음부터 그 다정한 거짓에 기대고 싶었던 것일지도." }
+    ] },
+    { id: 2, title: "도둑맞은 집중력", author: "요한 하리", reviews: [
+      { ai: "claude", text: "조각조각 흩어진 하루는 네 탓이 아니었다고,\n누군가 다정하게 나를 한 줌씩 다시 모아준다." },
+      { ai: "chatgpt", text: "바쁘게 흘려보낸 하루 끝에서, 내가 놓치고 살아온 것을 돌아본다.\n삶의 속도를 다시 고르고 싶어지는 조용한 마음." },
+      { ai: "gemini", text: "정신없이 흘러가는 풍경 속에서 정작 소중한 시선들을 잃어버렸다.\n빠르게 채워지는 일상 대신 깊고 고요하게 머물고 싶은 당신에게." }
+    ] },
+    { id: 3, title: "내 문장이 그렇게 이상한가요", author: "김정선", reviews: [
+      { ai: "claude", text: "덜어내고 나서야 비로소 보이는 것이 있다,\n서툰 마음끼리 오래 주고받은 안부 끝에서." },
+      { ai: "chatgpt", text: "조금 덜어냈을 뿐인데 흐릿하던 마음이 뜻밖에 또렷해진다.\n익숙해서 보이지 않던 것들을 다시 바라보게 된다." },
+      { ai: "gemini", text: "무심히 흘려보낸 흔적 사이로 감춰둔 서툰 정직함이 비쳐 든다.\n얽힌 매듭을 풀어내며 내 안의 날것 그대로의 숨결을 마주한다." }
+    ] },
+    { id: 4, title: "꽃을 보듯 너를 본다", author: "나태주", reviews: [
+      { ai: "claude", text: "무심히 지나쳤던 작은 것들이 오늘따라 환하게 빛나고,\n그 빛 속에서 나는 너라는 계절을 처음 알아본다." },
+      { ai: "chatgpt", text: "무심히 지나쳤던 마음도 오래 바라보면 조금씩 다르게 보인다.\n평범한 하루에 다정한 온기를 남겨주는 짧고 따뜻한 시선." },
+      { ai: "gemini", text: "오랫동안 조용히 들여다보아야 비로소 보이는 마음의 예쁜 무늬들.\n스쳐 지나가던 작은 숨결 하나도 따스하게 감싸며 가만히 다가온다." }
+    ] },
+    { id: 5, title: "기울어진 평등", author: "토마 피케티, 마이클 샌델", reviews: [
+      { ai: "claude", text: "한쪽으로만 쏠린 마음은 쉽게 돌아오지 않지만,\n오래 묻고 또 묻다 보면 함께 서는 법을 배운다." },
+      { ai: "chatgpt", text: "당연하다고 믿었던 것이 누군가에게는 그렇지 않을 수 있다.\n익숙한 풍경을 다른 자리에서 바라보게 하는 질문." },
+      { ai: "gemini", text: "모두가 빛을 받는다 믿었던 그늘 아래 보이지 않는 저울이 기울어진다.\n당연했던 질서의 균열 속에서 참아온 침묵의 무게가 밀려든다." }
+    ] },
+    { id: 6, title: "박곰희 연금 부자 수업", author: "박곰희", reviews: [
+      { ai: "claude", text: "완벽하지 않아도 오늘 심은 작은 씨앗 하나가\n먼 훗날의 나를 오래도록 따뜻하게 지켜준다." },
+      { ai: "chatgpt", text: "먼 훗날의 나를 위해 오늘의 작은 선택을 차곡차곡 쌓아간다.\n막연했던 내일을 조금은 든든한 마음으로 바라보게 된다." },
+      { ai: "gemini", text: "아득한 먼 훗날의 불안에 흔들리지 않도록 나만의 단단한 울타리를 쌓는다.\n차근차근 모아둔 조용한 시간들이 마침내 깊은 안식의 계절을 불러온다." }
+    ] },
+    { id: 7, title: "자몽살구클럽", author: "한로로", reviews: [
+      { ai: "claude", text: "각자의 어둠을 안고 모인 작은 방에서 우리는 약속했다,\n딱 한 번만 더, 서로의 내일이 되어주자고." },
+      { ai: "chatgpt", text: "버티는 것만으로도 벅찬 날, 곁에 있는 마음 하나가 이유가 되기도 한다.\n무너지고 싶은 순간에도 다시 오늘을 붙잡게 하는 작은 온기." },
+      { ai: "gemini", text: "막다른 길목에서 서성이던 마음들이 모여 서로의 비어 있는 자리를 채운다.\n벼랑 끝에 서서 나누었던 다정한 고백 덕분에 다시 한번 살아갈 용기를 얻는다." }
+    ] },
+    { id: 8, title: "지적인 어른을 위한 최소한의 교양수업", author: "사이토 다카시", reviews: [
+      { ai: "claude", text: "흩어져 있던 별들을 이어 하나의 별자리를 그리는 밤,\n넓어진 하늘만큼 나도 조금 더 깊은 사람이 된다." },
+      { ai: "chatgpt", text: "알지 못했던 것을 하나씩 알아갈수록 세상은 조금 더 넓어진다.\n익숙한 하루를 전보다 깊은 눈으로 바라보게 되는 시간." },
+      { ai: "gemini", text: "잡다한 소음으로 흩어진 생각들을 가만히 정돈하여 마음의 깊이를 더해간다.\n세계의 깊은 결을 차분히 짚어가는 동안 굳건한 삶의 중심이 바로 선다." }
+    ] },
+    { id: 9, title: "안녕이라 그랬어", author: "김애란", reviews: [
+      { ai: "claude", text: "가까운 줄 알았던 우리 사이에 보이지 않는 선이 그어지고,\n무심히 건넨 한마디가 오래도록 서늘하게 남는다." },
+      { ai: "chatgpt", text: "지나간 뒤에야 비로소 알게 되는 마음들이 있다.\n스쳐 간 순간들을 오래 바라보게 하는 서늘하고 따뜻한 여운." },
+      { ai: "gemini", text: "무심코 흩어진 잔물결 사이로 숨겨둔 쓸쓸함과 다정한 온기가 번져간다.\n스쳐 지나가는 마침표 끝에서도 서로에게 건네는 작고 따뜻한 눈빛이 남는다." }
+    ] },
+    { id: 10, title: "긍정의 말들", author: "박산호", reviews: [
+      { ai: "claude", text: "걱정이 사라진 날은 끝내 오지 않았지만,\n쓴 하루도 달게 바꾸는 법을 나는 조금씩 배워간다." },
+      { ai: "chatgpt", text: "마음대로 되지 않는 날에도 나를 일으키는 작은 마음은 남아 있다.\n괜찮은 쪽을 한 번 더 바라볼 힘을 조용히 건네준다." },
+      { ai: "gemini", text: "어두운 그늘 속을 헤매는 순간에도 작은 빛 하나를 찾아내는 마음의 기적.\n거센 바람을 탓하기보다 내 안의 촛불을 가만히 다독이며 내일을 맞이한다." }
+    ] }
+  ];
+
+  // 서평 카드에 표시할 AI 이름표 (실제 브랜드 로고 대신, 저작권 문제 없는 색상 배지로 표시합니다)
+  const AI_LABELS = {
+    claude: { name: "Claude", initial: "C" },
+    chatgpt: { name: "ChatGPT", initial: "G" },
+    gemini: { name: "Gemini", initial: "G" }
+  };
+
+  const SESSION_KEY = 'kli_stamp_session_v1';
+
+  let session = null;          // { org, name, stamps:{id:true}, completedAt, redeemed }
+  let currentSelectedZone = null;
+  let justStampedZoneId = null;
+  let toastTimer = null;
+  let missionShown = false;
+
+  /* ---------- 유틸 ---------- */
+  function showToast(msg) {
+    const toast = document.getElementById('toast');
+    const toastText = document.getElementById('toast-text');
+    toastText.innerText = msg;
+    toast.classList.add('show');
+    if (toastTimer) clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => toast.classList.remove('show'), 3000);
+  }
+  function escapeHtml(str) {
+    return String(str).replace(/[&<>"']/g, s => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[s]));
+  }
+  function loadSession() {
+    const raw = localStorage.getItem(SESSION_KEY);
+    session = raw ? JSON.parse(raw) : null;
+  }
+  function saveSession() { localStorage.setItem(SESSION_KEY, JSON.stringify(session)); }
+
+  /* ---------- 참가자 시작 ---------- */
+  function startRally() {
+    const org = document.getElementById('entry-org').value.trim();
+    const name = document.getElementById('entry-name').value.trim();
+    const err = document.getElementById('entry-error');
+    if (!org || !name) {
+      err.textContent = '소속과 이름을 모두 입력해주세요.';
+      return;
+    }
+    err.textContent = '';
+    session = { org, name, stamps: {}, completedAt: null, redeemed: false };
+    ZONES.forEach(z => session.stamps[z.id] = false);
+    saveSession();
+    missionShown = false;
+
+    document.getElementById('stamp-entry').style.display = 'none';
+    document.getElementById('stamp-board-wrap').style.display = 'block';
+    updateParticipantTag();
+    renderStampGrid();
+  }
+
+  function updateParticipantTag() {
+    const span = document.querySelector('#participant-tag span');
+    span.textContent = session.redeemed
+      ? `${session.org} · ${session.name} 님 미션 완료`
+      : `${session.org} · ${session.name} 님 진행중`;
+  }
+
+  /* ---------- 스탬프 그리드 ---------- */
+  function renderStampGrid() {
+    const grid = document.getElementById('stamp-grid');
+    grid.innerHTML = '';
+
+    ZONES.forEach(zone => {
+      const isVisited = session.stamps[zone.id] === true;
+      const isJustStamped = justStampedZoneId === zone.id;
+
+      const item = document.createElement('div');
+      item.className = `stamp-item ${isVisited ? 'completed' : ''} ${isJustStamped ? 'just-stamped' : ''}`;
+      item.onclick = () => onZoneClick(zone);
+      item.innerHTML = `
+        <div class="zone-name">${zone.name.replace('\n', '<br>')}</div>
+        ${!isVisited ? '<div class="click-hint">번호 입력</div>' : ''}
+        <div class="good-stamp"><span class="stamp-thumb">👍</span><span class="stamp-text">GOOD</span></div>
+      `;
+      grid.appendChild(item);
+    });
+
+    if (justStampedZoneId) setTimeout(() => { justStampedZoneId = null; }, 500);
+
+    const doneCount = Object.values(session.stamps).filter(v => v === true).length;
+    document.getElementById('stamp-count').innerText = `${doneCount} / ${ZONES.length} 완료`;
+
+    const completionBanner = document.getElementById('completion-banner');
+    const timeTag = document.getElementById('completed-time-tag');
+
+    if (doneCount === ZONES.length) {
+      if (!session.completedAt) {
+        session.completedAt = new Date().toISOString();
+      }
+      const d = new Date(session.completedAt);
+      timeTag.innerText = `사서 확인용 : ${d.getMonth()+1}월 ${d.getDate()}일 ${d.getHours()}시 ${String(d.getMinutes()).padStart(2,'0')}분 인증 완료`;
+      completionBanner.classList.add('show');
+      if (!missionShown) {
+        missionShown = true;
+        setTimeout(openMissionModal, 300);
+      }
+    } else {
+      completionBanner.classList.remove('show');
+    }
+
+    saveSession();
+  }
+
+  function onZoneClick(zone) {
+    if (session.stamps[zone.id]) {
+      showToast(`✅ [${zone.name.replace('\n', ' ')}]은 이미 GOOD 도장을 받은 구역입니다.`);
+      return;
+    }
+    currentSelectedZone = zone;
+    document.getElementById('modal-zone-tag').innerText = `구역 ${zone.id}`;
+    document.getElementById('modal-zone-title').innerText = zone.name.replace('\n', ' ');
+    const inputField = document.getElementById('code-input');
+    inputField.value = '';
+    document.getElementById('input-modal').classList.add('active');
+    setTimeout(() => inputField.focus(), 150);
+  }
+
+  function closeInputModal() {
+    document.getElementById('input-modal').classList.remove('active');
+    currentSelectedZone = null;
+  }
+
+  function submitCode() {
+    if (!currentSelectedZone) return;
+    const inputField = document.getElementById('code-input');
+    const enteredCode = inputField.value.trim();
+    const modalBox = document.getElementById('modal-box');
+
+    if (enteredCode === currentSelectedZone.code) {
+      session.stamps[currentSelectedZone.id] = true;
+      justStampedZoneId = currentSelectedZone.id;
+      const zoneName = currentSelectedZone.name.replace('\n', ' ');
+      closeInputModal();
+      renderStampGrid();
+      const doneCount = Object.values(session.stamps).filter(v => v === true).length;
+      if (doneCount < ZONES.length) {
+        showToast(`🎯 구역 탐방 성공! [${zoneName}]에 GOOD 도장이 찍혔습니다.`);
+      }
+    } else {
+      modalBox.classList.add('shake');
+      setTimeout(() => modalBox.classList.remove('shake'), 400);
+      showToast('❌ 인증번호 3자리가 올바르지 않습니다. 다시 확인해 주세요.');
+      inputField.value = '';
+      inputField.focus();
+    }
+  }
+
+  function openMissionModal() { document.getElementById('mission-modal').classList.add('active'); }
+  function closeMissionModal() { document.getElementById('mission-modal').classList.remove('active'); }
+
+  /* ---------- 사서 확인 & 구글 시트 누적 저장 ---------- */
+  async function confirmByLibrarian() {
+    const codeInput = document.getElementById('librarian-code').value.trim();
+    const msgBox = document.getElementById('librarian-msg');
+    const btn = document.getElementById('librarian-confirm-btn');
+    msgBox.className = 'librarian-msg';
+
+    if (!session) {
+      msgBox.className = 'librarian-msg err';
+      msgBox.textContent = '이 기기에 진행 중인 참여자 정보가 없습니다.';
+      return;
+    }
+    const doneCount = Object.values(session.stamps).filter(v => v === true).length;
+    if (doneCount < ZONES.length) {
+      msgBox.className = 'librarian-msg err';
+      msgBox.textContent = '아직 9개 구역 인증이 완료되지 않았습니다.';
+      return;
+    }
+    if (codeInput !== LIBRARIAN_CODE) {
+      msgBox.className = 'librarian-msg err';
+      msgBox.textContent = '확인 코드가 올바르지 않습니다.';
+      return;
+    }
+    if (session.redeemed) {
+      msgBox.className = 'librarian-msg err';
+      msgBox.textContent = '이미 경품 지급 처리가 완료된 참여자입니다.';
+      return;
+    }
+    if (!GOOGLE_SCRIPT_URL) {
+      msgBox.className = 'librarian-msg err';
+      msgBox.textContent = '구글 시트 연동 주소가 아직 설정되지 않았습니다. (코드 상단 GOOGLE_SCRIPT_URL 입력 필요)';
+      return;
+    }
+
+    btn.disabled = true;
+    msgBox.className = 'librarian-msg';
+    msgBox.textContent = '구글 시트로 전송 중...';
+
+    const confirmedAt = new Date().toISOString();
+    try {
+      const res = await fetch(GOOGLE_SCRIPT_URL, {
+        method: 'POST',
+        body: JSON.stringify({ org: session.org, name: session.name, completedAt: session.completedAt, confirmedAt })
+      });
+      const data = await res.json();
+
+      if (data.status === 'duplicate') {
+        msgBox.className = 'librarian-msg err';
+        msgBox.textContent = `이미 지급 완료된 참여자입니다. (처리 시각: ${data.confirmedAt ? new Date(data.confirmedAt).toLocaleString('ko-KR') : '기존 기록'})`;
+        session.redeemed = true;
+        saveSession();
+        updateParticipantTag();
+      } else if (data.status === 'ok') {
+        session.redeemed = true;
+        saveSession();
+        updateParticipantTag();
+        document.getElementById('librarian-code').value = '';
+        msgBox.className = 'librarian-msg ok';
+        msgBox.textContent = `✅ ${session.org} / ${session.name}님 지급 처리 완료! 구글 시트에 저장되었습니다.`;
+        showToast('🎁 경품 지급이 완료되었습니다.');
+      } else {
+        msgBox.className = 'librarian-msg err';
+        msgBox.textContent = '처리 중 오류가 발생했습니다. 잠시 후 다시 시도해주세요.';
+      }
+    } catch (err) {
+      msgBox.className = 'librarian-msg err';
+      msgBox.textContent = '구글 시트에 연결하지 못했습니다. 인터넷 연결과 GOOGLE_SCRIPT_URL 설정을 확인해주세요.';
+    }
+    btn.disabled = false;
+  }
+
+  /* ---------- 서평 응모 (1번 행사) ---------- */
+  let selectedBookId = null;
+
+  function renderReviewCards() {
+    const wrap = document.getElementById('review-card-list');
+    wrap.innerHTML = '';
+    const shuffled = shuffleArray(BOOKS); // 고르게 섞는 함수(아래 추첨 영역에 정의)
+    shuffled.forEach((book, idx) => {
+      const card = document.createElement('div');
+      card.className = 'review-card';
+      card.dataset.bookId = book.id;
+      card.onclick = () => selectReviewCard(book.id);
+      card.innerHTML = `
+        <div class="review-card-num">서평 ${idx + 1}</div>
+        ${book.reviews.map(r => {
+          const label = AI_LABELS[r.ai];
+          return `
+            <div class="review-quote-block">
+              <div class="review-ai-badge ${r.ai}"><span class="ai-dot">${label.initial}</span>${label.name}</div>
+              <p class="review-quote">${escapeHtml(r.text).replace(/\n/g, '<br>')}</p>
+            </div>
+          `;
+        }).join('')}
+      `;
+      wrap.appendChild(card);
+    });
+    selectedBookId = null;
+    const hint = document.getElementById('vote-selected-hint');
+    hint.className = 'vote-selected-hint';
+    hint.textContent = '아직 선택한 서평이 없습니다.';
+  }
+
+  function selectReviewCard(bookId) {
+    selectedBookId = bookId;
+    document.querySelectorAll('#review-card-list .review-card').forEach(el => {
+      el.classList.toggle('selected', Number(el.dataset.bookId) === bookId);
+    });
+    const hint = document.getElementById('vote-selected-hint');
+    hint.className = 'vote-selected-hint picked';
+    hint.textContent = '✅ 서평을 선택했습니다. 아래 정보를 입력해 응모를 완료해주세요.';
+  }
+
+  function openRevealModal(book) {
+    document.getElementById('reveal-book-info').innerHTML = `『${escapeHtml(book.title)}』<br>${escapeHtml(book.author)} 지음`;
+    document.getElementById('review-reveal-modal').classList.add('active');
+  }
+
+  function closeRevealModal() {
+    const modal = document.getElementById('review-reveal-modal');
+    const wasActive = modal.classList.contains('active');
+    modal.classList.remove('active');
+    if (wasActive) resetVoteForm();
+  }
+
+  function unlockVoteForm() {
+    const codeInput = document.getElementById('vote-staff-code');
+    const err = document.getElementById('vote-lock-error');
+    if (codeInput.value.trim() !== VOTE_STAFF_CODE) {
+      err.textContent = '확인 코드가 올바르지 않습니다.';
+      return;
+    }
+    err.textContent = '';
+    codeInput.value = '';
+    document.getElementById('vote-locked').style.display = 'none';
+    document.getElementById('vote-form').style.display = 'block';
+  }
+
+  function relockVoteForm() {
+    document.getElementById('vote-form').style.display = 'none';
+    document.getElementById('vote-locked').style.display = 'block';
+    resetVoteForm();
+  }
+
+  function resetVoteForm() {
+    const msgBox = document.getElementById('vote-msg');
+    msgBox.className = 'vote-msg';
+    msgBox.textContent = '';
+    document.getElementById('vote-org').value = '';
+    document.getElementById('vote-name').value = '';
+    renderReviewCards();
+  }
+
+  async function submitVote() {
+    const msgBox = document.getElementById('vote-msg');
+    msgBox.className = 'vote-msg';
+
+    if (!selectedBookId) {
+      msgBox.className = 'vote-msg err';
+      msgBox.textContent = '서평을 먼저 선택해주세요.';
+      return;
+    }
+    const org = document.getElementById('vote-org').value.trim();
+    const name = document.getElementById('vote-name').value.trim();
+    if (!org || !name) {
+      msgBox.className = 'vote-msg err';
+      msgBox.textContent = '소속과 이름을 모두 입력해주세요.';
+      return;
+    }
+    if (!GOOGLE_SCRIPT_URL) {
+      msgBox.className = 'vote-msg err';
+      msgBox.textContent = '구글 시트 연동 주소가 아직 설정되지 않았습니다. (코드 상단 GOOGLE_SCRIPT_URL 입력 필요)';
+      return;
+    }
+
+    const btn = document.getElementById('vote-submit-btn');
+    btn.disabled = true;
+    msgBox.textContent = '응모 접수 중...';
+
+    try {
+      const res = await fetch(GOOGLE_SCRIPT_URL, {
+        method: 'POST',
+        body: JSON.stringify({ type: 'review', org, name, bookId: selectedBookId, submittedAt: new Date().toISOString() })
+      });
+      const data = await res.json();
+
+      if (data.status === 'ok') {
+        const chosenBook = BOOKS.find(b => b.id === selectedBookId);
+        msgBox.className = 'vote-msg ok';
+        msgBox.textContent = `✅ ${org} / ${name}님 응모가 접수되었습니다!`;
+        showToast('📖 응모가 접수되었습니다!');
+        openRevealModal(chosenBook);
+        document.getElementById('vote-org').value = '';
+        document.getElementById('vote-name').value = '';
+      } else {
+        msgBox.className = 'vote-msg err';
+        msgBox.textContent = data.message || '처리 중 오류가 발생했습니다. 잠시 후 다시 시도해주세요.';
+      }
+    } catch (err) {
+      msgBox.className = 'vote-msg err';
+      msgBox.textContent = '구글 시트에 연결하지 못했습니다. 인터넷 연결과 GOOGLE_SCRIPT_URL 설정을 확인해주세요.';
+    }
+    btn.disabled = false;
+  }
+
+  /* ---------- 관리자 모드 ---------- */
+  let adminUnlocked = false;
+  let adminCodeTyped = '';  // 관리자가 입력한 코드 (서버의 Code.gs가 맞는지 검사)
+  let adminData = null; // { stamps: [...], reviews: [...] }
+
+  function openAdminModal() {
+    document.getElementById('admin-modal').classList.add('active');
+    if (adminUnlocked) loadAdminData();
+  }
+
+  function closeAdminModal() {
+    document.getElementById('admin-modal').classList.remove('active');
+  }
+
+  async function unlockAdmin() {
+    const input = document.getElementById('admin-code-input');
+    const err = document.getElementById('admin-gate-err');
+    const typed = input.value.trim();
+    if (!typed) {
+      err.textContent = '코드를 입력해주세요.';
+      return;
+    }
+    err.textContent = '확인 중...';
+    adminCodeTyped = typed;
+
+    // 서버(Code.gs)에 코드를 보내 확인합니다. 맞으면 명단을 받아옵니다.
+    const ok = await loadAdminData();
+    if (!ok) {
+      adminCodeTyped = '';
+      err.textContent = '코드가 올바르지 않거나 서버에 연결하지 못했습니다.';
+      return;
+    }
+    err.textContent = '';
+    input.value = '';
+    adminUnlocked = true;
+    document.getElementById('admin-gate').style.display = 'none';
+    document.getElementById('admin-panel').style.display = 'block';
+  }
+
+  function formatAdminDate(iso) {
+    if (!iso) return '-';
+    const d = new Date(iso);
+    return isNaN(d) ? String(iso) : d.toLocaleString('ko-KR');
+  }
+
+  // 명단을 불러오고, 성공하면 true / 실패하면 false를 돌려줍니다.
+  async function loadAdminData() {
+    const msgBox = document.getElementById('admin-msg');
+    msgBox.className = 'admin-msg';
+
+    if (!GOOGLE_SCRIPT_URL) {
+      msgBox.className = 'admin-msg err';
+      msgBox.textContent = '구글 시트 연동 주소가 아직 설정되지 않았습니다. (코드 상단 GOOGLE_SCRIPT_URL 입력 필요)';
+      return false;
+    }
+
+    msgBox.textContent = '불러오는 중...';
+    try {
+      const url = `${GOOGLE_SCRIPT_URL}?action=list&code=${encodeURIComponent(adminCodeTyped)}`;
+      const res = await fetch(url);
+      const data = await res.json();
+
+      if (data.status !== 'ok') {
+        msgBox.className = 'admin-msg err';
+        msgBox.textContent = data.message || '데이터를 불러오지 못했습니다.';
+        return false;
+      }
+      adminData = { stamps: data.stamps || [], reviews: data.reviews || [] };
+      msgBox.textContent = '';
+      renderAdminTables(adminData);
+      return true;
+    } catch (err) {
+      msgBox.className = 'admin-msg err';
+      msgBox.textContent = '구글 시트에 연결하지 못했습니다. 인터넷 연결을 확인해주세요.';
+      return false;
+    }
+  }
+
+  function renderAdminTables(data) {
+    document.getElementById('admin-summary').innerHTML = `
+      <div class="admin-stat"><b>${data.stamps.length}</b><span>도장깨기 경품 지급</span></div>
+      <div class="admin-stat"><b>${data.reviews.length}</b><span>서평 응모</span></div>
+    `;
+
+    const stampWrap = document.getElementById('admin-stamp-table');
+    stampWrap.innerHTML = data.stamps.length ? `
+      <table class="admin-table">
+        <thead><tr><th>소속</th><th>이름</th><th>완료 시각</th><th>지급 확인 시각</th></tr></thead>
+        <tbody>
+          ${data.stamps.map(r => `<tr><td>${escapeHtml(r.org)}</td><td>${escapeHtml(r.name)}</td><td>${escapeHtml(formatAdminDate(r.completedAt))}</td><td>${escapeHtml(formatAdminDate(r.confirmedAt))}</td></tr>`).join('')}
+        </tbody>
+      </table>` : `<div class="admin-empty">아직 지급 완료된 참여자가 없습니다.</div>`;
+
+    const reviewWrap = document.getElementById('admin-review-table');
+    reviewWrap.innerHTML = data.reviews.length ? `
+      <table class="admin-table">
+        <thead><tr><th>소속</th><th>이름</th><th>선택한 서평 번호</th><th>응모 시각</th></tr></thead>
+        <tbody>
+          ${data.reviews.map(r => `<tr><td>${escapeHtml(r.org)}</td><td>${escapeHtml(r.name)}</td><td>${escapeHtml(r.bookId)}</td><td>${escapeHtml(formatAdminDate(r.submittedAt))}</td></tr>`).join('')}
+        </tbody>
+      </table>` : `<div class="admin-empty">아직 응모한 참여자가 없습니다.</div>`;
+
+    drawResults = {};
+    document.getElementById('admin-draw-result').innerHTML =
+      `<div class="admin-empty">위 버튼을 눌러 그룹별 추첨을 진행해주세요.</div>`;
+  }
+
+  /* ---------- 서평 그룹별 랜덤 추첨 ---------- */
+  let drawResults = {}; // { bookId: [{org, name}, ...] }
+
+  function shuffleArray(arr) {
+    const a = arr.slice();
+    for (let i = a.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+  }
+
+  function groupReviewsByBook(reviews) {
+    const groups = {};
+    reviews.forEach(r => {
+      const key = String(r.bookId);
+      if (!groups[key]) groups[key] = [];
+      groups[key].push(r);
+    });
+    return groups;
+  }
+
+  function getDrawWinnerCount() {
+    return Math.max(1, parseInt(document.getElementById('draw-winner-count').value, 10) || 1);
+  }
+
+  function drawWinners() {
+    if (!adminData || !adminData.reviews.length) {
+      document.getElementById('admin-draw-result').innerHTML =
+        `<div class="admin-empty">아직 서평 응모자가 없습니다.</div>`;
+      return;
+    }
+    const winnerCount = getDrawWinnerCount();
+    const groups = groupReviewsByBook(adminData.reviews);
+    drawResults = {};
+    Object.keys(groups).forEach(bookId => {
+      drawResults[bookId] = shuffleArray(groups[bookId]).slice(0, winnerCount);
+    });
+    renderDrawResult(groups);
+  }
+
+  function redrawGroup(bookId) {
+    if (!adminData) return;
+    const winnerCount = getDrawWinnerCount();
+    const groups = groupReviewsByBook(adminData.reviews);
+    drawResults[bookId] = shuffleArray(groups[bookId] || []).slice(0, winnerCount);
+    renderDrawResult(groups);
+  }
+
+  function renderDrawResult(groups) {
+    const wrap = document.getElementById('admin-draw-result');
+    const bookIds = Object.keys(groups).sort((a, b) => Number(a) - Number(b));
+    if (!bookIds.length) {
+      wrap.innerHTML = `<div class="admin-empty">아직 서평 응모자가 없습니다.</div>`;
+      return;
+    }
+    wrap.innerHTML = bookIds.map(bookId => {
+      const book = BOOKS.find(b => b.id === Number(bookId));
+      const applicants = groups[bookId];
+      const winners = drawResults[bookId] || [];
+      const winnerChips = winners.length
+        ? winners.map(w => `<span class="draw-winner-chip">🎉 ${escapeHtml(w.org)} / ${escapeHtml(w.name)}</span>`).join('')
+        : `<span class="admin-empty" style="padding:4px 0;">아직 추첨하지 않았습니다.</span>`;
+      return `
+        <div class="draw-group">
+          <div class="draw-group-head">
+            <span class="draw-group-title">『${escapeHtml(book ? book.title : '알 수 없는 서평')}』<span class="draw-group-count">응모 ${applicants.length}명</span></span>
+            <button type="button" class="btn-redraw" onclick="redrawGroup('${bookId}')"><i class="fa-solid fa-rotate"></i> 이 그룹만 다시 추첨</button>
+          </div>
+          <div class="draw-winner-list">${winnerChips}</div>
+        </div>
+      `;
+    }).join('');
+  }
+
+  function exportAdminExcel() {
+    const msgBox = document.getElementById('admin-msg');
+    if (!adminData) {
+      msgBox.className = 'admin-msg err';
+      msgBox.textContent = '먼저 데이터를 불러와주세요.';
+      return;
+    }
+    if (typeof XLSX === 'undefined') {
+      msgBox.className = 'admin-msg err';
+      msgBox.textContent = '엑셀 변환 기능을 불러오지 못했습니다. 잠시 후 다시 시도해주세요.';
+      return;
+    }
+
+    const wb = XLSX.utils.book_new();
+
+    const stampRows = [['소속', '이름', '완료 시각', '지급 확인 시각']]
+      .concat(adminData.stamps.map(r => [r.org, r.name, formatAdminDate(r.completedAt), formatAdminDate(r.confirmedAt)]));
+    XLSX.utils.book_append_sheet(wb, XLSX.utils.aoa_to_sheet(stampRows), '도장깨기');
+
+    const reviewRows = [['소속', '이름', '선택한 서평 번호', '응모 시각']]
+      .concat(adminData.reviews.map(r => [r.org, r.name, r.bookId, formatAdminDate(r.submittedAt)]));
+    XLSX.utils.book_append_sheet(wb, XLSX.utils.aoa_to_sheet(reviewRows), '서평응모');
+
+    const drawnBookIds = Object.keys(drawResults).filter(bookId => drawResults[bookId].length);
+    if (drawnBookIds.length) {
+      const drawRows = [['도서명', '저자', '소속', '이름']];
+      drawnBookIds.sort((a, b) => Number(a) - Number(b)).forEach(bookId => {
+        const book = BOOKS.find(b => b.id === Number(bookId));
+        drawResults[bookId].forEach(w => {
+          drawRows.push([book ? book.title : '', book ? book.author : '', w.org, w.name]);
+        });
+      });
+      XLSX.utils.book_append_sheet(wb, XLSX.utils.aoa_to_sheet(drawRows), '추첨결과');
+    }
+
+    const today = new Date().toISOString().slice(0, 10);
+    XLSX.writeFile(wb, `KLI도서관_행사응모현황_${today}.xlsx`);
+
+    msgBox.className = 'admin-msg ok';
+    msgBox.textContent = '✅ 엑셀 파일이 다운로드되었습니다.';
+  }
+
+  /* ---------- 이벤트 바인딩 ---------- */
+  document.getElementById('code-input').addEventListener('keydown', e => { if (e.key === 'Enter') submitCode(); });
+  document.getElementById('librarian-code').addEventListener('keydown', e => { if (e.key === 'Enter') confirmByLibrarian(); });
+  document.getElementById('vote-staff-code').addEventListener('keydown', e => { if (e.key === 'Enter') unlockVoteForm(); });
+  document.getElementById('admin-code-input').addEventListener('keydown', e => { if (e.key === 'Enter') unlockAdmin(); });
+  document.getElementById('input-modal').addEventListener('click', function(e) { if (e.target === this) closeInputModal(); });
+  document.getElementById('mission-modal').addEventListener('click', function(e) { if (e.target === this) closeMissionModal(); });
+  document.getElementById('review-reveal-modal').addEventListener('click', function(e) { if (e.target === this) closeRevealModal(); });
+  document.getElementById('admin-modal').addEventListener('click', function(e) { if (e.target === this) closeAdminModal(); });
+  window.addEventListener('keydown', e => { if (e.key === 'Escape') { closeInputModal(); closeMissionModal(); closeRevealModal(); closeAdminModal(); } });
+
+  /* ---------- 초기 로드 ---------- */
+  window.addEventListener('DOMContentLoaded', () => {
+    renderReviewCards();
+
+    loadSession();
+    if (session) {
+      missionShown = Object.values(session.stamps).filter(v => v === true).length === ZONES.length;
+      document.getElementById('stamp-entry').style.display = 'none';
+      document.getElementById('stamp-board-wrap').style.display = 'block';
+      updateParticipantTag();
+      renderStampGrid();
+    }
+  });
+</script>
+</body>
+</html>

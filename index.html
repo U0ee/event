@@ -1154,7 +1154,7 @@
 
     btn.disabled = true;
     msgBox.className = 'librarian-msg';
-    msgBox.textContent = '구글 시트로 전송 중...';
+    msgBox.textContent = '참여 정보 전송 중...';
 
     // 고유번호는 기기에 저장해 두고, 재시도·새로고침 후에도 같은 번호를 씁니다.
     if (!session.requestId) {
@@ -1180,7 +1180,7 @@
         updateParticipantTag();
         document.getElementById('librarian-code').value = '';
         msgBox.className = 'librarian-msg ok';
-        msgBox.textContent = `✅ ${session.org} / ${session.name}님 지급 처리 완료! 구글 시트에 저장되었습니다.`;
+        msgBox.textContent = `✅ ${session.org} / ${session.name}님 지급 처리 완료! 참가자 명단에 저장되었습니다.`;
         showToast('🎁 경품 지급이 완료되었습니다.');
       } else {
         msgBox.className = 'librarian-msg err';
